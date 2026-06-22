@@ -126,8 +126,24 @@ h3 {
 h1 {
   margin: 0;
   font-family: "Syncopate", var(--pico-font-family);
-  font-size: clamp(2.5rem, 7vw, 5.4rem);
+  max-width: 100%;
   line-height: 1;
+}
+
+.brand-title {
+  display: grid;
+  gap: 0.18em;
+}
+
+.brand-title span {
+  display: block;
+  font-size: clamp(2.25rem, 8vw, 5.2rem);
+  overflow-wrap: normal;
+  white-space: nowrap;
+}
+
+.brand-title span:last-child {
+  font-size: clamp(1.55rem, 5.5vw, 3.55rem);
 }
 
 h2 {
@@ -319,5 +335,9 @@ footer {
   .nav-cta,
   .primary-cta {
     width: 100%;
+  }
+
+  .top-nav .nav-cta {
+    display: none;
   }
 }
